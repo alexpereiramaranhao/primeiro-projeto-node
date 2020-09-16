@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import {
   Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn,
 } from 'typeorm';
@@ -9,7 +10,7 @@ class Appointment {
   id: string;
 
   @Column({ type: 'varchar', name: 'provider_id' })
-  providerId: string;
+  provider_id: string;
 
   @ManyToOne(() => User)
   @JoinColumn({ name: 'provider_id' })

@@ -14,7 +14,7 @@ class User {
   email: string;
 
   @Column('varchar')
-  password: string;
+  password?: string;
 
   @CreateDateColumn({ type: 'timestamp', name: 'created_at' })
   createdAt: Date
